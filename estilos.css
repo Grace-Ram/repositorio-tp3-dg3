@@ -1,0 +1,150 @@
+/*Este es un comentario de CSS*/
+/*Los comentarios de CSS no se renderizan en la página*/
+/*Todas las declaraciones de estilo se encuentran en el CSS, el HTML es para contenido únicamente*/
+
+/*Reseteo de márgenes de todos los elementos para todos los navegadores*/
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+/*Importar tipografía de google fonts vía @import (sin etiquetas <style>)*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;700&display=swap');
+/*Esto me permite utilizar la tipografía en todo el contenido de body. Como standard vamos a usar la 100*/
+
+body {
+    /*Declaración de tipografía*/
+    font-family: cursive, Arial, Helvetica, sans-serif;
+    /*Declaración de peso de Tipografía*/
+    font-weight: 100;
+    /*Declaración de color de fondo del body*/
+    background-color: yellowgreen;
+    /*Declaración del color de la tipografía en el body*/
+    color: #ffffff;
+}
+
+/*ESTILOS DE CUADRADOS DE COLORES*/
+
+/*Este es un id único en el HTML, representado por #nombre*/
+/*Este color está declarado en #Hex*/
+#color1 {
+    background-color: #a55243;
+}
+/*Este color está declarado con una palabra clave*/
+#color2 {
+    background-color: #76d3c5;
+}
+/*Este color está declarado con valores RGB (XX, XX, XX)*/
+#color3 {
+    background-color: rgb(88, 106, 196);
+}
+/*Este color está declarado en RGB, y tiene transparencia de 0.705*/
+#color4 {
+    background-color: #9dab81;
+}
+
+/*ESTILOS DE BARRA DE NAVEGACIÓN*/
+nav {
+    /*Color de texto declarado en #Hex*/
+    color: rgba(238, 33, 33, 0.92);
+}
+
+/*ESTILOS LINKS EN BARRA DE NAVEGACIÓN*/
+nav a{
+    /*Color te texto*/
+    color: #ec1b1b;
+    /*Decoración de texto: subrayado | tachado | etc.*/
+    text-decoration: none;
+    /*Tipografía*/
+    font-family: 'roboto', Arial, Helvetica, sans-serif;
+    /*Peso de la tipografía (tiene que estar linkeada la variable)*/
+    /*Sombra: offset-x | offset-y | blur-radius | color */
+    text-shadow: 1px 1px 2px #ffffff;
+    /*Espaciado interior*/
+    font-weight: 700;
+    /*Espaciado interno*/
+    padding: 36px;
+    /*Tiempo de transición animaciones de hover (mirar abajo)*/
+    transition:  color 1s;
+    /*Transformar texto a Mayúsculas*/
+    text-transform: uppercase;
+}
+
+/*Cambios al pasar el mouse sobre el elemento (hover)*/
+nav a:hover{
+    /*Cambio de color*/
+    color: #7c7c7c;
+}
+
+/*ESTILOS LOGO BARRA DE NAVEGACIÓN*/
+#logo img{
+    /*Altura de imagen relativa al espacio disponible: "100% del espacio"*/
+    height: 100%;
+    /*Altura máxima que puede alcanzar la imagen: 80px*/
+    max-height: 80px;
+    /*Posicionamiento 10px abajo de dónde debería estar*/
+    position: relative;
+    top: 10px;
+}
+
+/*ESTILOS DE BANNER*/
+.banner {
+    /*Imagen de fondo*/
+    background-image: url(media/background_first.jpg);
+    /*Posición del fondo x|y*/
+    background-position: center bottom;
+    /*¿Repetir fondo? (tramas)*/
+    background-repeat: no-repeat;
+    /*Tamaño de fondo: cubrir todo el espacio*/
+    background-size: cover;
+    /*Ancho: cubrir el 100%*/
+    width: 100%;
+    /*Alto: cubrir el 100% de la pantalla que o visualiza*/
+    height: 100vh;
+}
+
+.banner_info {
+    /*Color de texto*/
+    color: greenyellow;
+    /*Centrar texto*/
+    text-align: center;
+    /*Transformar texto a mayúsuclas*/
+    text-transform: uppercase;
+    /*Sombra: offset-x | offset-y | blur-radius | color */
+    text-shadow: 2px 2px 3px black;
+    /*Espaciado interior*/
+    padding: 0px 0px 206px 0px;
+
+}
+
+/*ESTILOS DEL BOTON*/
+.btn {
+    /*Color de fondo*/
+    background-color: rgba(255, 0, 0, 0.664);
+    /*Color de tipografía*/
+    color: gold;
+    
+    /*Decoracion del texto*/
+    text-decoration: none;
+    /*Alineación del texto*/
+    text-align: center;
+    /*Borde redondeado*/
+    border-radius: 27px;
+    /*Tamaño de fuente*/
+    font-size: 0.9rem;
+    /*PEso de fuente*/
+    font-weight: 400;
+    /*Espaciado interno*/
+    padding: 5px 22px;
+    /*Cambios al hover por tiempo (1s)*/
+    transition: all 1s;
+}
+
+/*Al pasar el mouse por arriba*/
+.btn:hover {
+    /*Cambio de color de fondo*/
+    background-color: rgb(255, 0, 0);
+}
+
+/*ESTRUCTURA de la plantilla | Tocar bajo su propio riesgo*/
+.col{display:flex;flex-flow:column nowrap;justify-content:center;align-content:center}.colb{display:flex;flex-flow:column nowrap;justify-content:flex-end;align-content:center}.row{display:flex;flex-flow:row nowrap;justify-content:center;align-content:center}nav{position:absolute;top:0;width:99%}.colores{display:flex;flex-flow:row nowrap;justify-content:center;align-items:center}.color{width:100px;height:100px;margin:25px;display:flex;flex-flow:row nowrap;justify-content:center;align-items:center}h1{margin-bottom:10px}p{margin-bottom:10px;font-weight: 300;}.icon{width:86%}@media only screen and (max-width:600px){nav a{display:none}}
